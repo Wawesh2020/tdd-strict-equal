@@ -1,10 +1,10 @@
 const describe = require('mocha').describe
 const it  = require('mocha').it
 const expect = require('chai').expect
-const strictEqual = require('../strictEqual')
+const ThisValue = require('../strictEqual')
 
 describe('strictEqual', () => {
-    describe('isEqual', () => {
+    describe('ThisValue', () => {
         it('returns true if values provided are same and are of the same type',() => {
             // create test data
 
@@ -15,7 +15,7 @@ describe('strictEqual', () => {
 
             // call the function with the test data
 
-            const Return = strictEqual(valueOne,valueTwo)
+            const Return = ThisValue(valueOne,valueTwo)
 
             //make assertions about what should be true
 
@@ -25,13 +25,13 @@ describe('strictEqual', () => {
             // create test data
 
             const valueOne = 'a'
-            const valueTwo = '5'
+            const valueTwo = '5' 
 
 
 
             // call the function with the test data
 
-            const Return = strictEqual(valueOne,valueTwo)
+            const Return = ThisValue(valueOne,valueTwo)
 
             //make assertions about what should be true
 
@@ -47,7 +47,7 @@ describe('strictEqual', () => {
 
             // call the function with the test data
 
-            const Return = strictEqual(valueOne,valueTwo)
+            const Return = ThisValue(valueOne,valueTwo)
 
             //make assertions about what should be true
 
@@ -64,7 +64,7 @@ describe('strictEqual', () => {
 
             // call the function with the test data
 
-            const Return = strictEqual(valueOne,valueTwo)
+            const Return = ThisValue(valueOne,valueTwo)
 
             //make assertions about what should be true
 
