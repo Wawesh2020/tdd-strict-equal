@@ -1,5 +1,5 @@
-const strictEqual = (vals) => {
+const ThisValue = (valueOne, valueTwo) => {
 
 }
 
-module.exports = strictEqual 
+module.exports = ThisValue 
